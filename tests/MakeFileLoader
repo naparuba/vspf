@@ -1,0 +1,5 @@
+gcc -o loader loader.c -ldl
+gcc -fPIC -c module1.c
+gcc -shared -o module1.so module1.o
+gcc -fPIC -c module2.c
+gcc -shared -o module2.so module2.o
